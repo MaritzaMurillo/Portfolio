@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>MaritzaMurillo Personal Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#my_work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1 id="home">Pleasure to meet you! Im Maritza,
+            <br> a provider of software development
+            <br>who you can count on
+            <br>to provide the latest technological advancements 
+            <br>to your business.</br></h1>
+        <img src="background.jpg" width="100%" height="530px">
+    </div>
+        <div id="about_me" class="about">
+        <h1>About Me</h1>
+        <div class="text-and-image">
+            <div class="image-container">
+                <img src="https://i.ibb.co/T08r5V6/Professional-Photo.jpg" alt="Picture of me-Maritza" width="300" height="320">
+                <div class="linkedin-link-container">
+                <a class="link" href="https://www.linkedin.com/in/maritza-murillo-46a337193" >LinkedIn</a>
+                </div>
+            </div>
+            <div class="text-box">
+                <p class="diff">
+                I am a positive, honest, detail-oriented engineer. My expertise lies in web design, but I'm all in for coding as a whole. My passion for innovation makes me an active seeker for progress and improvement in technology. Besides computing, I love spending time with family, friends, and my cats, or enjoying some of my sweets that I bake. There is also not a day that I don't listen to my many playlists on Spotify.</p>
+            </div>
+    </div>
+    <div id="my_work" class="work">
+        <h1>Portfolio</h1>
+        <div class="project-grid">
+            <div class="project-thumbnail">
+                <div class="link-container">
+                <a href="https://maritzamurillo.github.io/boxmodel/"> The Box Model</a>
+                </div>  
+                <img src="box-model final image.png" alt="Three images (a hot air balloon to the left and a Lithuanian flag above a Romanian flag)within a laptop background" class="project-img">
+                <div class="details-container">
+                    <button class="see-details-btn" onclick="toggleDetails('detailsContent1')">See Details</button>
+                    <div id="detailsContent1" class="hidden">
+        <p>This project demonstrates how simply using css box model skills can help one code a hot air balloon, a Lithuanian flag, and a Romanian flag.</p>
+    </div>
+    </div>
+            </div>
+            <div class="project-thumbnail">
+                <div class="link-container">
+                <a href="https://maritzamurillo.github.io/Media-Query-1/">Media Query- Mobile First Approach</a>
+                <br>
+                <a href="https://maritzamurillo.github.io/Media-Query/">Media Query- Larger Screen Approach</a>
+                </br>
+                </div>
+                <img src="media-query final images.png" alt="A screen cut horizontally in half: the top half shows a pink screen with four cats and the bottom half of the screen has a green background and shows 3 cats in a row. This screen is within a laptop background" class="project-img">
+                <div class="details-container">
+                <button class="see-details-btn" onclick="toggleDetails('detailsContent2')">See Details</button>
+                <div id="detailsContent2" class="hidden">
+   
+        <p>This project shows the responsive web design process- by starting with a mobile first approach and designing for a small screen(shown by the pink screen), to finding a breaking point and designing for a larger screen(shown on the aqua screen).</p>
+    </div>
+            </div>
+            </div>
+            <div class="project-thumbnail centered">
+                <div class="link-container">
+                <a href="https://maritzamurillo.github.io/menu/">Burgeralicious Menu</a>
+                </div>
+                <img src="menu form.png" alt="Restaurant menu form image" class="project-img">
+                <div class="details-container">
+                <button class="see-details-btn" onclick="toggleDetails('detailsContent3')">See Details</button>
+                <div id="detailsContent3" class="hidden">
+        <p>This freshly designed menu allows customers to input their food selections as well as contact information in the "Food Order Form." A seperate "Payment" section provides an easy way to enter card details or select to pay at "Bergeralicious."</p>
+    </div>
+
+    <script src="script.js"></script>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h1>Contact</h1>
+            <p> I am open to collaborating with others on projects and/or exchanging ideas. I love to hear different perspectives.
+                Don't hesitate to send me a message below!
+            </p>
+                <form id="contact-form" action="your-email-script.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@domain.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message here..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+    </div>
+<footer>
+    <p class="foot">© Maritza Murillo. All rights reserved.</p>
+</footer>
+</body>
+</html>
